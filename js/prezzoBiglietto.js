@@ -24,3 +24,6 @@ let prezzoBiglietto;
 
 // Variabile che contiene il costo totale del viaggio
 let costoViaggio;
+
+// Chiedo all'utente il numero di chilometri da percorrere
+let chilometri = parseInt(prompt("Inserisci il numero di chilometri da percorrere"));
