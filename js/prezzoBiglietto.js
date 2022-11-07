@@ -27,3 +27,6 @@ let costoViaggio;
 
 // Chiedo all'utente il numero di chilometri da percorrere
 let chilometri = parseInt(prompt("Inserisci il numero di chilometri da percorrere"));
+
+// Calcolo il prezzo del biglietto
+prezzoBiglietto = prezzoAlKm * chilometri;
