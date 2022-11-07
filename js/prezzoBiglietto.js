@@ -9,3 +9,6 @@ const prezzoAlKm = 0.21;
 
 // Variabile che contiene lo sconto per i minorenni
 const scontoMinorenni = 0.2;
+
+// Variabile che contiene lo sconto per gli over 65
+const scontoOver = 0.4;
