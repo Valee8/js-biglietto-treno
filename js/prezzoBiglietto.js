@@ -49,3 +49,6 @@ else {
     // Il costo totale del viaggio è calcolato senza nessuno sconto
     costoViaggio = prezzoBiglietto;
 }
+
+// Stampo il costo del viaggio con sole 2 cifre decimali
+document.getElementById("title").innerHTML = `Vuoi percorrere ${chilometri} km e hai ${etaPasseggero} anni, quindi il prezzo totale è di ${costoViaggio.toFixed(2)} euro`;
