@@ -12,3 +12,6 @@ const scontoMinorenni = 0.2;
 
 // Variabile che contiene lo sconto per gli over 65
 const scontoOver = 0.4;
+
+// Variabile che contiene chi ha 18 anni
+const etaMinorenne = 18;
