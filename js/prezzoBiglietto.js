@@ -18,3 +18,6 @@ const etaMinorenne = 18;
 
 // Variabile che contiene chi ha 65 anni
 const etaOver = 65;
+
+// Variabile che contiene il prezzo del biglietto
+let prezzoBiglietto;
