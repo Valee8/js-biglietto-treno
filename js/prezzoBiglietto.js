@@ -33,3 +33,19 @@ prezzoBiglietto = prezzoAlKm * chilometri;
 
 // Chiedo all'utente l'età del passeggero
 let etaPasseggero = parseInt(prompt("Inserisci la tua età"));
+
+// Se l'età del passeggero è minore di 18  
+if (etaPasseggero < etaMinorenne) {
+    // Il costo totale del viaggio è calcolato in base allo sconto per i minorenni
+    costoViaggio = prezzoBiglietto * scontoMinorenni;
+} 
+// Se l'età del passeggero è maggiore di 65
+else if (etaPasseggero > etaOver) {
+    // Il costo totale del viaggio è calcolato in base allo sconto per gli over 65
+    costoViaggio = prezzoBiglietto * scontoOver;
+} 
+// In tutti gli altri casi
+else {
+    // Il costo totale del viaggio è calcolato senza nessuno sconto
+    costoViaggio = prezzoBiglietto;
+}
