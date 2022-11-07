@@ -6,3 +6,6 @@ va applicato uno sconto del 40% per gli over 65.*/
 
 // Variabile che contiene il prezzo al chilometro
 const prezzoAlKm = 0.21;
+
+// Variabile che contiene lo sconto per i minorenni
+const scontoMinorenni = 0.2;
