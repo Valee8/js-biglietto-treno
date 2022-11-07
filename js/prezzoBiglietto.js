@@ -21,3 +21,6 @@ const etaOver = 65;
 
 // Variabile che contiene il prezzo del biglietto
 let prezzoBiglietto;
+
+// Variabile che contiene il costo totale del viaggio
+let costoViaggio;
