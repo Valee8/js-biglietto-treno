@@ -14,7 +14,7 @@ const scontoMinorenni = 0.2;
 const scontoOver = 0.4;
 
 // Variabile che contiene chi ha 18 anni
-const etaMinorenne = 18;
+const etaMaggiorenne = 18;
 
 // Variabile che contiene chi ha 65 anni
 const etaOver = 65;
@@ -35,7 +35,7 @@ prezzoBiglietto = prezzoAlKm * chilometri;
 let etaPasseggero = parseInt(prompt("Inserisci la tua età"));
 
 // Se l'età del passeggero è minore di 18  
-if (etaPasseggero < etaMinorenne) {
+if (etaPasseggero < etaMaggiorenne) {
     // Il costo totale del viaggio è calcolato in base allo sconto per i minorenni
     costoViaggio = prezzoBiglietto * scontoMinorenni;
 } 
