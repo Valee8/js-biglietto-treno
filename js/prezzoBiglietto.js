@@ -30,3 +30,6 @@ let chilometri = parseInt(prompt("Inserisci il numero di chilometri da percorrer
 
 // Calcolo il prezzo del biglietto
 prezzoBiglietto = prezzoAlKm * chilometri;
+
+// Chiedo all'utente l'età del passeggero
+let etaPasseggero = parseInt(prompt("Inserisci la tua età"));
