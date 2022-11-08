@@ -22,9 +22,6 @@ const etaOver = 65;
 // Variabile che contiene il prezzo del biglietto
 let prezzoBiglietto;
 
-// Variabile che contiene il costo totale del viaggio
-let costoViaggio;
-
 // Chiedo all'utente il numero di chilometri da percorrere
 let chilometri = parseInt(prompt("Inserisci il numero di chilometri da percorrere"));
 
@@ -37,18 +34,13 @@ let etaPasseggero = parseInt(prompt("Inserisci la tua età"));
 // Se l'età del passeggero è minore di 18  
 if (etaPasseggero < etaMaggiorenne) {
     // Il costo totale del viaggio è calcolato in base allo sconto per i minorenni
-    costoViaggio = prezzoBiglietto * scontoMinorenni;
+    prezzoBiglietto -= prezzoBiglietto * scontoMinorenni;
 } 
 // Se l'età del passeggero è maggiore di 65
 else if (etaPasseggero > etaOver) {
     // Il costo totale del viaggio è calcolato in base allo sconto per gli over 65
-    costoViaggio = prezzoBiglietto * scontoOver;
+    prezzoBiglietto -= prezzoBiglietto * scontoOver;
 } 
-// In tutti gli altri casi
-else {
-    // Il costo totale del viaggio è calcolato senza nessuno sconto
-    costoViaggio = prezzoBiglietto;
-}
 
 // Stampo il costo del viaggio con sole 2 cifre decimali
-document.getElementById("title").innerHTML = `Vuoi percorrere ${chilometri} km e hai ${etaPasseggero} anni, quindi il prezzo totale è di ${costoViaggio.toFixed(2)} euro`;
+document.getElementById("title").innerHTML = `Vuoi percorrere ${chilometri} km e hai ${etaPasseggero} anni, quindi il prezzo totale è di ${prezzoBiglietto.toFixed(2)} euro`;
